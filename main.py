@@ -24,7 +24,6 @@ def push(current_repo_path):
     except subprocess.CalledProcessError as e:
         print(f"An error occurred: {e}")
 
-
 urls = ['https://github.com/priyanshuthakran1/Lecture-51-CipherSchools']
 # for url in urls:
 #     clone_repo(url)
