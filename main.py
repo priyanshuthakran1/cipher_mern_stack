@@ -13,7 +13,7 @@ def push():
     print("Repository pushed successfully.")
 
 
-urls = ['https://github.com/priyanshuthakran1/Lecture-51-CipherSchools','']
+urls = ['https://github.com/priyanshuthakran1/Lecture-51-CipherSchools-P-B']
 
 for url in urls:
     clone_repo(url)
