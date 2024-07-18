@@ -6,7 +6,15 @@ def clone_repo(repo_url):
     except subprocess.CalledProcessError as e:
         print(f"Failed to clone repository '{repo_url}': {e}")
 
+def push():
+    subprocess.run(['git', 'add', '.'])
+    subprocess.run(['git', 'commit', '-m', 'Update'])
+    subprocess.run(['git', 'push', 'origin','main'])
+    print("Repository pushed successfully.")
+
+
 urls = ['https://github.com/priyanshuthakran1/Lecture-51-CipherSchools','']
 
 for url in urls:
-    clone_repo(url) 
+    clone_repo(url)
+    push()
