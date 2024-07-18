@@ -26,8 +26,8 @@ def push(current_repo_path):
 
 
 urls = ['https://github.com/priyanshuthakran1/Lecture-51-CipherSchools']
-for url in urls:
-    clone_repo(url)
+# for url in urls:
+#     clone_repo(url)
 current_repo_path = 'https://github.com/priyanshuthakran1/cipher_mern_stack.git'
 push(current_repo_path)
 
