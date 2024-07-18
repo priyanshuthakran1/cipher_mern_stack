@@ -1,0 +1,12 @@
+import subprocess
+def clone_repo(repo_url):
+    try:
+        subprocess.run(['git', 'clone', repo_url], check=True)
+        print(f"Repository '{repo_url}' cloned successfully.")
+    except subprocess.CalledProcessError as e:
+        print(f"Failed to clone repository '{repo_url}': {e}")
+
+urls = ['https://github.com/priyanshuthakran1/Lecture-51-CipherSchools','']
+
+for url in urls:
+    clone_repo(url) 
