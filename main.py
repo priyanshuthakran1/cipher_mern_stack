@@ -9,7 +9,8 @@ def clone_repo(repo_url):
 def push():
     subprocess.run(['git', 'add', '.'])
     subprocess.run(['git', 'commit', '-m', 'Update'])
-    subprocess.run(['git', 'push', 'origin','main'])
+    subprocess.run(['git', 'remote', 'add', 'https://github.com/priyanshuthakran1/cipher_mern_stack.git'])
+    subprocess.run(['git', 'push', '-u', 'origin','main'])
     print("Repository pushed successfully.")
 
 
